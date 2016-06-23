@@ -1,5 +1,5 @@
 # DataScience9_DevelopingDataProducts
-course project
+### course project
 
 This is a course project that aiming at learning how to develop shiny applications. Data set of stock S&P500 index was used for the project (downloaded from URL https://fred.stlouisfed.org/series/SP500/downloaddata, last accessed on June 23, 2016). In the shiny application, a moving average line of various window size is displayed alongside with the raw time series. By moving the slider, user can control the size of the moving window (default to 60 days) up to a year. 
 
