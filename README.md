@@ -1,13 +1,13 @@
 # DataScience9_DevelopingDataProducts
 ### course project
 
-This is a course project that aiming at learning how to develop shiny applications. Data set of stock S&P500 index was used for the project (downloaded from URL https://fred.stlouisfed.org/series/SP500/downloaddata, last accessed on June 23, 2016). In the shiny application, a moving average line of various window size is displayed alongside with the raw time series. By moving the slider, user can control the size of the moving window (default to 60 days) up to a year. 
+This is a course project aiming at learning shiny applications. Data set of stock S&P500 index was used for the project (data source URL https://fred.stlouisfed.org/series/SP500/downloaddata, last accessed on June 23, 2016). In the application, a moving average line is plotted alongside with the raw time series. By moving the slider, user can control the size of the moving window (default to 60 days) up to a year. 
 
 ### Motivation
-This shiny application is for fulfilling the course project. 
+This application is for fulfilling the course project requirement. Educationwise, it visualizes the concept of a simple smoothing technique called moving average, which smooths out short term noise at various extent depending on the window size (length).
 
 ### Instruction
-Move the slider to see how the moving average line changes.
+Move the slider to see how the moving average line changes with the window size.
 
-### Summary
-This application visualizes how the moving average changes with the window size. It can be seen the smaller the window size, the closer the moving window line is to the raw data (i.e., less smoothing). In contrast, large wind size smoothes out short-term noises and give a general trend. In this example, the recent trend is upward and maybe reaching a plateau. 
+### Key Points
+Focusing on the first point of the moving average line, you can see that it is calculated (i.e., an average) of the previous n number of points, where n is the window size. It can also be seen that a small window would produce a line that is close to the raw data but is less smooth relative to larger windows. In contrast, a large window would smooth out a large amount of short-term noise. Also note that the moving average trend lags the raw data. 
