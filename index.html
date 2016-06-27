@@ -86,10 +86,15 @@
 
 <slide class="class" id="4" style="background:;">
   <hgroup>
-    <h2>App Layout</h2>
+    <h2>R Code Used in the App for Moving Average</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="layeroutImg.PNG" alt="layoutImg"></p>
+    <pre><code class="r"># ...
+require(&quot;RcppRoll&quot;)
+library(RcppRoll)
+# ...
+mv &lt;- roll_mean(Value, n=n, na.rm=T)
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
@@ -125,7 +130,7 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='App Layout'>
+        data-slide=5 title='R Code Used in the App for Moving Average'>
          5
       </a>
     </li>

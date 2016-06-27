@@ -35,9 +35,16 @@ The movement of the first point of the moving average line gives us an idea how 
 
 --- .class #4
 
-## App Layout
+## R Code Used in the App for Moving Average
 
-![layoutImg](layeroutImg.PNG)
+```{r code, echo=T, eval=F}
+# ...
+require("RcppRoll")
+library(RcppRoll)
+# ...
+mv <- roll_mean(Value, n=n, na.rm=T)
+
+```
 
 
 
