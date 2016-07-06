@@ -1,7 +1,20 @@
-
+require("RcppRoll")
+require("httpuv")
+require("jsonlite")
+require("shiny")
+require("xtable")
 
 if("RcppRoll" %in% rownames(installed.packages()) == FALSE) {install.packages("RcppRoll")}
 library(RcppRoll)
+if("httpuv" %in% rownames(installed.packages()) == FALSE) {install.packages("RcppRoll")}
+library(httpuv)
+if("jsonlite" %in% rownames(installed.packages()) == FALSE) {install.packages("RcppRoll")}
+library(jsonlite)
+if("shiny" %in% rownames(installed.packages()) == FALSE) {install.packages("RcppRoll")}
+library(shiny)
+if("xtable" %in% rownames(installed.packages()) == FALSE) {install.packages("RcppRoll")}
+library(xtable)
+
 
 shinyServer(  
   function(input, output) {    
